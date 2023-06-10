@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{margin: 0;padding: 0;box-sizing: border-box;font-family: 'Poppins', sans-serif;}
+body{
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+header{
+    position: absolute;
+    z-index: 100;
+}
+h2.logo{
+    float: left;
+    color: white;
+    font-size: 2em;
+    padding: 10px;
+}
+nav{
+    float: right;
+    margin-top: 20px;
+    margin-left: 150px;
+}
+nav ul li{
+    list-style: none;
+    display: inline;
+    margin: 0px 30px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    transition: 0.4s;
+}
+nav ul li a:hover{
+    background-color: white;
+    color: black;
+    padding: 5px 20px;
+    border-radius: 30px;
+}
+.paralax{
+    background: url(images/background.jpg) no-repeat;
+    height: 92vh;
+    background-size: cover;
+    background-position: center; 
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+.paralax img{
+    top: 0;
+    left: 0;
+    position: absolute;
+    pointer-events: none;
+    width: 100%;
+}
+#floor{
+    z-index: 2;
+}
+#floor{
+    transform: translateY(110px);
+}
+#text{
+    color: white;
+    font-size: 5em;
+    text-shadow: 2px 2px 5px #fff;
+
+}
+.con{
+    position: relative;
+    background: #120821;
+    padding: 10px;
+    background-attachment: fixed;
+    z-index: 100;
+}
+.con h2{
+    color: white;
+    text-align: justify;
+    font-size: 2em;
+}
+.con p{
+    padding: 20px;
+    color: rgb(204, 204, 204);
+    font-weight: 500;
+}
